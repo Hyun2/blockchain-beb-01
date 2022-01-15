@@ -1,5 +1,5 @@
-import { ethers } from 'ethers';
-import Web3Modal from 'web3modal';
+import { ethers } from "ethers";
+import Web3Modal from "web3modal";
 
 export const connectToWallet = async (erc20List, setErc20List) => {
   // const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -20,8 +20,8 @@ export const connectToWallet = async (erc20List, setErc20List) => {
   setErc20List([
     ...erc20List,
     {
-      name: 'Ethereum',
-      symbol: 'ETH',
+      name: "Ethereum",
+      symbol: "ETH",
       balance: walletBalance,
     },
   ]);
